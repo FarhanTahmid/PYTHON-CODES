@@ -1,5 +1,7 @@
 #using open function to read the content of a file
 #by default the mode is reading which is 'r'
+import nt
+
 f=open('textFile.txt','r')
 data=f.read()
 print(data)
@@ -28,3 +30,11 @@ j.close()
 #you can open a file by 'with' statement, thus you dont need to close all the time
 with open("writeText.txt",'a')as f:
     f.write("This is farhan")
+
+#check whether something is present in the file or not
+k=open("textFile.txt",'r')
+l=k.read()
+if "Fizanaz" in l:
+    print("fiza is in farhan's life")
+else:
+    print("Fiza is still in farhan's life")
