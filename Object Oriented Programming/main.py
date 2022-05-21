@@ -1,9 +1,10 @@
-class Number:
-    def sum(self):
-        return self.a+self.b
+class Dog:
+    """Making a model dog"""
+    def __init__(self,dogName,dogAge):
+        self.dogName=dogName
+        self.dogAge=dogAge
+    def sit(self):
+        print(f"The dog named {self.dogName} is sitting now and his age is {self.dogAge}")
+    def rollOver(self):
+        print(f"The dog named {self.dogName} just rolled over and his age is {self.dogAge}")
 
-num=Number()
-num.a=12
-num.b=34
-s=num.sum()
-print("The sum of a and b is: ",s)
