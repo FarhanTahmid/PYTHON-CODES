@@ -12,3 +12,5 @@ class Dog:
 myDog=Dog("Zaed",5)
 #Accessing elements
 print(f"My dog's name is {myDog.dogName} and his age is {myDog.dogAge}")
+myDog.sit()
+myDog.rollOver()
