@@ -1,0 +1,5 @@
+x,y,z=input("Enter three numbers: ").split()
+print("The number X is: ",x)
+print("The number Y is: ",y)
+print("The number Z is: ",z)
+print(x+y+z)
