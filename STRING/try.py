@@ -10,15 +10,15 @@ for x in email_or_number:
 charCounter=True
 for x in username:
     if(ord(x)>58 and ord(x)<126):
-        print('has string only')
         charCounter=True
         break
     else:
         charCounter=False
         continue
 if(charCounter):
-    print(f"The generated username is {username}")
+    username=username+str(random.randint(10,10000))
 else:
-    s=5
+    s=random.randint(1,5)
     randomchars=''.join(random.choices(string.ascii_uppercase + string.digits, k=s))
-    print("The generated username is : " + username+randomchars)
+    username=username+randomchars
+print(username)
