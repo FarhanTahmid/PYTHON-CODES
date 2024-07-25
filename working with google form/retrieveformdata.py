@@ -16,8 +16,8 @@ service = discovery.build('forms', 'v1', http=creds.authorize(
     Http()), discoveryServiceUrl=DISCOVERY_DOC, static_discovery=False)
 
 # Prints the responses of your specified form:
-form_id = '1vbjGv4oBNewGMtsQU1WpOXcjwd6ucKyKq5c9ROWW-KE'
-response_id='ACYDBNiP_THjAyDLUTPgFucQQ9pfzl_EveQBYc3pqEsragkRPyBcG9QNOMGAg7kPjcctsoE'
+form_id = '1luOxW4FGP1574XqKJlduJJlFQN5sIcLIKOujhfL6iUM'
+response_id='ACYDBNjFVr379DFr01MOlBfpM7c9UQHvBHbsxPONl6hIFBMyUtthTwXH_gYn2MZhJc5OZfw'
 result = service.forms().responses().get(formId=form_id,responseId=response_id).execute()
-
+# result = service.forms().responses().list(formId=form_id).execute()
 print(result)
